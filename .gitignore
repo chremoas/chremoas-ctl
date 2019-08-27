@@ -173,3 +173,7 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+chremoas-ctl-linux-amd64
+chremoas.yaml
+chremoas-config.yaml
