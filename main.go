@@ -12,7 +12,7 @@ import (
 
 func setupRedis(addr, password, namespace, description string, serverAdmins []string) {
 	service := fmt.Sprintf("%s.%s.%s", namespace, "srv", "perms")
-	redisClient := redis.Init(addr, password, 0, service)
+	redisClient := redis.Init(service)
 	permName := redisClient.KeyName("members:server_admins")
 	permDesc := redisClient.KeyName("description:server_admins")
 
